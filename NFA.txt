@@ -1,0 +1,41 @@
+1 false
+Epsilon 2 9 
+
+2 false
+a 3 
+
+3 false
+p 4 
+
+4 false
+p 5 
+
+5 false
+l 6 
+
+6 false
+e 7 
+
+7 false
+Epsilon 8 
+
+8 true
+
+9 false
+b 10 
+
+10 false
+a 11 
+
+11 false
+n 12 
+
+12 false
+a 13 
+
+13 false
+n 14 
+
+14 false
+Epsilon 8 
+

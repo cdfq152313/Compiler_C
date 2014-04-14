@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1397472009 source:c:\users\denny\dropbox\compiler\compiler\main.cpp
+	<iostream>
+	<string>
+	"RE.h"
+
+1397474870 source:c:\users\denny\dropbox\compiler\compiler\fsm.cpp
+	"FSM.h"
+
+1397479605 c:\users\denny\dropbox\compiler\compiler\fsm.h
+	<iostream>
+	<vector>
+	<map>
+	<string>
+	<fstream>
+
+1397471728 source:c:\users\denny\dropbox\compiler\compiler\re.cpp
+	"RE.h"
+
+1397471660 c:\users\denny\dropbox\compiler\compiler\re.h
+	"FSM.h"
+	<iostream>
+	<vector>
+	<map>
+	<string>
+	<stack>
+
+1397479595 source:c:\users\denny\dropbox\compiler\compiler_c\fsm.cpp
+	"FSM.h"
+
+1397479605 c:\users\denny\dropbox\compiler\compiler_c\fsm.h
+	<iostream>
+	<vector>
+	<map>
+	<string>
+	<fstream>
+
+1397472009 source:c:\users\denny\dropbox\compiler\compiler_c\main.cpp
+	<iostream>
+	<string>
+	"RE.h"
+
+1397471660 c:\users\denny\dropbox\compiler\compiler_c\re.h
+	"FSM.h"
+	<iostream>
+	<vector>
+	<map>
+	<string>
+	<stack>
+
+1397471728 source:c:\users\denny\dropbox\compiler\compiler_c\re.cpp
+	"RE.h"
+
