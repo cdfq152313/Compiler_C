@@ -5,7 +5,7 @@ ODIR = ./output/
 #exec file
 ${EDIR}compiler:${EDIR}main.o ${EDIR}Scanner.o ${EDIR}Parser.o ${EDIR}ParserGenerator.o ${EDIR}CodeGenerator.o ${EDIR}MCodeGenerator.o ${EDIR}Struct.o
 	g++ -o ${EDIR}compiler ${EDIR}main.o ${EDIR}Scanner.o ${EDIR}Parser.o ${EDIR}ParserGenerator.o ${EDIR}CodeGenerator.o ${EDIR}MCodeGenerator.o ${EDIR}Struct.o
-${EDIR}main.o:main.cpp Scanner.o Parser.o ParserGenerator.o CodeGenerator.o MCodeGenerator.o Struct.o
+${EDIR}main.o:main.cpp
 	g++ -c main.cpp -o ${EDIR}main.o
 ${EDIR}Scanner.o:Scanner.h Scanner.cpp
 	g++ -c Scanner.cpp -o ${EDIR}Scanner.o
@@ -19,6 +19,8 @@ ${EDIR}MCodeGenerator.o:MCodeGenerator.h MCodeGenerator.cpp
 	g++ -c MCodeGenerator.cpp -o ${EDIR}MCodeGenerator.o
 ${EDIR}Struct.o:Struct.h Struct.cpp
 	g++ -c Struct.cpp -o ${EDIR}Struct.o
+
+#tiny machine
 ${ODIR}TM:Tiny_Machine.c
 	gcc Tiny_Machine.c -o ${ODIR}TM
 
