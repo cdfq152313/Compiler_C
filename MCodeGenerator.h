@@ -44,7 +44,7 @@ class MCodeGenerator{
             op["!"] = "NOT";
             op["JEQ"] = "JEQ";
 
-            opType["="] = 0;
+            opType["="] = 1;
             opType["l="] = 1;
             opType["s="] = 1;
             opType["+"] = 0;
