@@ -1,0 +1,145 @@
+-- Keywords --
+int char return if else while break
+
+-- Operators --
+= ! + - * / == != < > <= >= && ||
+
+-- Special Symbols --
+[ ] ( ) { } ; ,
+
+-- Identifier --
+[a-zA-Z_][a-zA-Z0-9_]*
+
+-- Number --
+[0-9]*
+
+-- Char --
+'[.|\\n|\\t| ]'
+
+-- Comment --
+//
+/* */
+
+=================
+不允許給初值
+不允許宣告function
+是否要區別int和float
+
+Type
+    int
+    char
+	double
+	float
+
+num 數字(自然數)
+id 變數名稱
+int 
+char
+double
+
+
+UnaryOp
+    -
+    !
+BinOp
+    +
+    -
+    *
+    /
+    ==
+    !=
+    <
+    <=
+    >
+    >=
+    &&
+    ||
+
+========================
+keyword
+
+auto
+break
+case
+const
+continue
+default
+do
+double
+else
+enum
+extern
+float
+for
+goto
+if
+long
+register
+return
+short
+signed
+sizeof
+static
+struct
+switch
+typedef
+union
+unsigned
+void
+volatile
+while
+
+==========
+1. 宣告多次
+2. 在賦值前先宣告
+3. 正確的type賦值
+4. operator是正確的
+
+identifer
+1.函數名
+2.變數名
+3.標記功能 (f32 , id) (+, plus) (;,semic) 
+
+token type
+1. 語言本身定義
+   保留字, operator, dividers{};
+2. 自己定義
+   變數, 數字, string
+
+symbol table
+支援兩動作插入 , 查詢 
+reserved word要先行插入
+1. symbol
+2. token類別(應該可以跟type併在一起?)
+3. type
+4. 是否初始化?
+
+semantic rule
+重複宣告
+未宣告就賦值
+增加一個entry給procedure
+
+single symbol table VS distinct symbol table
+single symbol table
+1. single pass 用stack
+2. multiple pass 用tree
+=============
+function
+1. t7,t8 當作 parameter(測試資料中參數不會超過兩個)
+2. 把t6 當作return address(測試資料中絕對不會出現RETURNADDRESS變數)
+3. 把function名稱當作回傳值(不需要考慮recursive)
+
+步驟
+1.讀取parameter到t0,t1
+2.jmp到function
+3.把回傳值放到function名稱上
+4.jmp回來
+=================
+中間碼遇到變數時
+1. 存入map
+2. 放入table
+3. 以後要用這個變數就參照table
+若加入function的問題
+1. 把一個暫存器當作stack的底
+2. 遇到新的function則暫存器+目前變數值
+3. 
