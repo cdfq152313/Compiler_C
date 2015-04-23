@@ -1,0 +1,86 @@
+BinOp	false
+Block	false
+Decl	false
+DeclList	true
+DeclList'	false
+Expr	false
+Expr'	true
+ExprArrayTail	true
+ExprIdTail	true
+ExprList	true
+ExprListTail	false
+ExprListTail'	true
+FunDecl	false
+ParamDecl	false
+ParamDecl'	true
+ParamDeclList	true
+ParamDeclListTail	false
+ParamDeclListTail'	true
+Program	true
+S	false
+Stmt	false
+StmtList	false
+StmtList'	true
+Type	false
+UnaryOp	false
+VarDecl	false
+VarDecl'	false
+VarDeclList	true
+
+BinOp	!= && * + - / < <= == > >= || 
+Block	{ 
+Decl	( ; [ 
+DeclList	char double float int 
+DeclList'	char double float int 
+Expr	! ( - id num 
+Expr'	!= && * + - / < <= == > >= || 
+ExprArrayTail	!= && * + - / < <= = == > >= || 
+ExprIdTail	!= && ( * + - / < <= = == > >= [ || 
+ExprList	! ( - id num 
+ExprListTail	! ( - id num 
+ExprListTail'	, 
+FunDecl	( 
+ParamDecl	char double float int 
+ParamDecl'	[ 
+ParamDeclList	char double float int 
+ParamDeclListTail	char double float int 
+ParamDeclListTail'	, 
+Program	char double float int 
+S	$ char double float int 
+Stmt	! ( - ; break id if num return while { 
+StmtList	! ( - ; break id if num return while { 
+StmtList'	! ( - ; break id if num return while { 
+Type	char double float int 
+UnaryOp	! - 
+VarDecl	char double float int 
+VarDecl'	; [ 
+VarDeclList	char double float int 
+
+BinOp	! ( - id num 
+Block	! $ ( - ; break char double else float id if int num return while { } 
+Decl	$ char double float int 
+DeclList	$ 
+DeclList'	$ char double float int 
+Expr	) , ; ] 
+Expr'	) , ; ] 
+ExprArrayTail	) , ; ] 
+ExprIdTail	) , ; ] 
+ExprList	) 
+ExprListTail	) 
+ExprListTail'	) 
+FunDecl	$ char double float int 
+ParamDecl	) , 
+ParamDecl'	) , 
+ParamDeclList	) 
+ParamDeclListTail	) 
+ParamDeclListTail'	) 
+Program	$ 
+S	
+Stmt	! ( - ; break else id if num return while { } 
+StmtList	} 
+StmtList'	} 
+Type	id 
+UnaryOp	! ( - id num 
+VarDecl	! ( - ; break char double float id if int num return while { 
+VarDecl'	! $ ( - ; break char double float id if int num return while { 
+VarDeclList	! ( - ; break id if num return while { 
