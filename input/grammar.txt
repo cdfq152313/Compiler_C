@@ -38,6 +38,8 @@ Block
 Type
     int
     char
+    double
+    float
 StmtList
     Stmt StmtList'
 StmtList'

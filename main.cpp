@@ -18,7 +18,7 @@ int main()
     bool checksc = false;
     bool checkpg = false;
     bool checkpa = false;
-
+/*
     //scanner
 
 
@@ -27,7 +27,7 @@ int main()
     if(checksc){
         scanner.PrinttoParser("./output/ParserToken.txt");
     }
-
+*/
     //ParserGenerator
     pg.ReadGrammar("./input/grammar.txt");
     checkpg = pg.ConstructNullFirstFollow("./output/set.txt");
@@ -41,6 +41,7 @@ int main()
             pa.PrintTree("./output/tree.txt");
         }
     }
+/*
     //intermediate code
     cg.ReadParsingtree("./output/tree.txt");
     cg.CreateSymbolTable("./output/symbol.txt");
@@ -55,6 +56,7 @@ int main()
     //Parser
     cout << "press ENTER to exit" << endl;
     getchar();
+*/
     return 0;
 }
 
